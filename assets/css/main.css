@@ -1,0 +1,408 @@
+/*
+ * Filename: main.css
+ * Author: Tristan Luther
+ * URL: http://tristanluther.com
+ */
+
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+
+@import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
+
+@import "https://fonts.googleapis.com/css?family=Comfortaa";
+
+
+body {
+    height: 100%;
+  	background-color: #FFF;
+  	font-family: 'Comfortaa','Source+Code+Pro', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+.container{
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.sub-text{
+    color: #777;
+    font-size: 12px;
+}
+
+.img-responsive{
+    padding: 5px;
+}
+
+.icon-bar{
+    color: #222;
+}
+
+/* Social Media Icons */
+.fa {
+    padding: 20px;
+    width: 70px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #222;
+    color: #FFF;
+  }
+
+.fa-linkedin{
+    background: #222;
+    color: #FFF;
+}
+
+.fa-facebook{
+    background: #222;
+    color: #FFF;
+}
+
+/* Titles */
+h2{
+	font-family: 'Comfortaa','Source+Code+Pro', serif;
+	font-size: 40px;
+	color: #222;
+}
+h4{
+	font-family: 'Comfortaa','Source+Code+Pro', serif;
+	font-size: 20px;
+	color: #222;
+}
+h1, h3, h6 {
+	font-family: 'Comfortaa','Source+Code+Pro', serif;
+    font-weight: 700;
+    color: #222;
+}
+
+h1 {
+	font-family: 'Comfortaa','Source+Code+Pro', serif;
+	font-size: 35px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+    color: #222;
+}
+h5{
+	font-family: 'Comfortaa','Source+Code+Pro', serif;
+    font-size: 40px;
+    color: #222;
+}
+
+.active { 
+    color: #000 !important;
+  }
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+p.description {
+    text-align: left;
+}
+
+li2{
+	display: list-item;
+	font-size: 16px;
+	text-align: left;
+}
+
+table, th, td {
+    border: 2px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+	line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: left;
+}
+.centered {
+    text-align: center;
+}
+.right {
+	text-align: right;
+}
+/* Links */
+a {
+    color: #0645AD;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.navbar-nav{
+	padding-bottom: 2.0%;
+	padding-top: 2.0%;
+}
+.navbar-inverse {
+	padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    border-color: #FFF;
+}
+
+.navbar-inverse {
+	background-color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #777;
+    font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #222;
+    font-size: 12px;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu {
+    
+}
+
+.navbar-inverse .navbar-nav .dropdown-item {
+    color: #777;
+    font-size: 12px;
+    display: block;
+}
+
+.navbar-inverse .navbar-nav .dropdown-item:hover {
+    color: #222;
+    font-size: 12px;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #222;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:hover > .icon-bar {
+	background-color: #FFF;
+}
+
+.navbar-inverse .navbar-toggle > .icon-bar {
+	background-color: #222;
+}
+
+.progress-bar-theme {
+  background-color: #222222;
+}
+
+
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+img.a {
+    vertical-align: text-top;
+    float: left;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* +++++ WRAP SECTIONS +++++ */
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+  }
+
+#ww {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #FFF;
+}
+
+
+.footer {
+	background-color: rgb(229, 241, 239);
+	padding-top: 50px;
+    padding-bottom: 10px; 
+    height: 300px;
+}
+
+.footer p {
+	color: #222;
+}
+
+.footer h4 {
+	color: #222;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #FFF;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #FFF;
+}
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+.col-lg-6:hover .overlay {
+    opacity: 0.9;
+  }
+
+  .col-lg-3:hover .overlay {
+    opacity: 0.9;
+  }
+  
+.zoomText {
+    color: #222;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Comfortaa','Source+Code+Pro', serif;
+	font-size: 30px;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFF;
+  }
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: rgb(255, 255, 255) !important;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+  }
+
+.left, .carousel-control {
+    background:none !important;
+}
+
+.carousel {
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
