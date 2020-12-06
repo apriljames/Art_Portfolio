@@ -1,7 +1,17 @@
+/***** custom cursors ******/
+body {
+    cursor: url(../imgs/icons/cursor.png), auto;
+}
+
+a {
+    cursor: url(../imgs/icons/hoverlink.png), pointer !important;
+}
+
+
 /***** Top menu *****/
  
 .navbar {
-    background: #444;
+    background: #8db3a2;
     -o-transition: all .6s;
     -moz-transition: all .6s;
     -webkit-transition: all .6s;
@@ -11,8 +21,8 @@
 }
  
 .navbar.navbar-no-bg {
-    background: #444;
-    background: rgba(0, 0, 0, 0.2);
+    background: #8db3a2;
+    background: #8db3a293; /*translucent*/
 }
  
 .navbar-dark .navbar-nav {
@@ -41,31 +51,92 @@
     padding-right: 1rem;
 }
  
-.navbar-brand {
-    width: 136px;
-    background: url(../img/logo.png) left center no-repeat;
-    border: 0;
-    text-indent: -99999px;
+
+/*******Navbar styling for other devices ******/
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+    .navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+
+}
+ 
+@media (max-width: 767px) {
+ 
+    .navbar.navbar-no-bg { background: #444; }
+    .navbar-dark .navbar-toggler { border-color: #444; }
+    .navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
+    .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 }
 
 /***** All Sections *****/
 .section-container {
     padding: 100px;
+    min-height: 100vh;
 }
+
+.section-description {
+    text-align: center;
+}
+
+/********* Links ********/
+.txt-link {
+    color: #ec9e71;
+}
+
+.txt-link:hover {
+    color: #64917c;
+    text-decoration: none;
+}
+
+.txt-link:active, .txt-link:after {
+    color: #ec9e71;
+}
+
+/***** Back to Top button *****/
+.btn {
+    transition-duration: 0.2s;
+    background-color: #8db3a2;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #64917c;
+    color: white;
+}
+
+.btn:active, .btn:focus {
+    background-color: #8db3a2;
+    color: white;
+    outline: none !important;
+    border: none !important;
+}
+
+.circle-btn {
+    border-radius: 50%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    display: none;
+}
+
+
 
 /***** Top content *****/
  
 .top-content {
-    padding: 210px 0;
+    padding: 35vh 0;
 }
  
 .top-content .text {
-    color: rgb(39, 24, 6);
+    color: rgb(0, 0, 0);
 }
  
 .top-content .text h1 {
     margin-top: 25px;
-    color:rgb(39, 24, 6);
+    color:rgb(0, 0, 0);
 }
  
 .top-content .description {
@@ -80,14 +151,19 @@
     margin-top: 45px;
 }
 
-/***** Services *****/
+.top-content .description {
+    padding-bottom: 10vh;
+}
+
+/***** about-me *****/
  
-.services-box {
+.about-me-box {
     padding-top: 100px;
     text-align: left;
+    margin: auto;
 }
  
-.services-box .services-box-icon {
+.about-me-box .about-me-box-icon {
     width: 80px;
     height: 80px;
     margin: 0 auto;
@@ -106,7 +182,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#9b59b6',GradientType=0 ); /* IE6-9 */
 }
  
-.services-box h3 {
+.about-me-box h3 {
     margin-top: 0;
     padding: 0 0 10px 0;
 }
@@ -170,5 +246,10 @@
 }
  
 .portfolio-container {
+    padding-top: 10vh;
+}
 
+/******** resume section ******/
+.experience-container {
+    padding-top: 35vh;
 }
