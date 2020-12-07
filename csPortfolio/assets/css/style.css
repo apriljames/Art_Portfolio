@@ -77,12 +77,25 @@ a {
     text-align: center;
 }
 
+.section-title {
+    font-size: 5vw;
+}
+
+.description p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 /********* Links ********/
 .txt-link {
     color: #ec9e71;
+    -webkit-transition: color .2s linear; /*soft transition on hover */
+    -moz-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
 }
 
-.txt-link:hover {
+.txt-link:hover, .txt-link:focus {
     color: #64917c;
     text-decoration: none;
 }
@@ -97,6 +110,7 @@ a {
     background-color: #8db3a2;
     color: white;
     border: none;
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -120,6 +134,16 @@ a {
     bottom: 25px;
     left: 25px;
     display: none;
+    background-color: #ec9e71;
+
+}
+
+.back-to-top:hover {
+    background-color: #8db3a2;
+}
+
+.back-to-top:active, .back-to-top:after {
+    background-color: #ec9e71;
 }
 
 
@@ -143,9 +167,6 @@ a {
     margin: 30px 0 10px 0;
 }
  
-.top-content .description p {
-    opacity: 0.8;
-}
  
 .top-content .top-big-link {
     margin-top: 45px;
@@ -163,24 +184,6 @@ a {
     margin: auto;
 }
  
-.about-me-box .about-me-box-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    font-size: 40px;
-    color: #fff;
-    line-height: 80px;
-    text-align: center;
-    border-radius: 28px;
-    background: #9b59b6; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffb24b 0%, #9b59b6 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#9b59b6)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ffb24b 0%,#9b59b6 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#9b59b6',GradientType=0 ); /* IE6-9 */
-}
  
 .about-me-box h3 {
     margin-top: 0;
@@ -218,9 +221,6 @@ a {
 .portfolio-box h3 {
     margin-top: 30px;
 }
-.portfolio-box h3 a { color: #555; }
-.portfolio-box h3 a:hover, 
-.portfolio-box h3 a:focus { color: #9b59b6; }
  
 .portfolio-box h3 i {
     padding-left: 10px;
@@ -253,3 +253,34 @@ a {
 .experience-container {
     padding-top: 35vh;
 }
+
+/****** contact section ********/
+.contact-container {
+    padding-top: 30vh;
+}
+
+.social-networks {
+    display: inline-block;
+}
+
+.social-icon {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #8db3a2;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.05);
+    background-color: #64917c;
+}
+
+
+

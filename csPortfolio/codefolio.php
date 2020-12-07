@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
         <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- <link rel="stylesheet" href="assets/css/media-queries.css"> -->
  
         <!-- Favicon and touch icons -->
@@ -68,7 +70,7 @@
         
                 <div class="row">
                     <div class="col-md-8 section-description offset-md-2 text">
-                        <h1 class="wow fadeInLeftBig">april.james</h1>
+                        <h1 class="section-title">april.james</h1>
                         <div id="typed-occupation" class="description">
                             <!-- space reserved for dynamic typing: "computer science student, senior @ oregon state university" -->
                         </div>
@@ -88,8 +90,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col about-me section-description wow fadeIn">
-                        <h2>about me</h2>
-                        <div class="divider-1 wow fadeInUp"><span></span></div>
+                        <h2 class="section-title">about me</h2>
+                        <!-- <div class="description wow fadeInUp"><span></span></div> -->
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -126,9 +128,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col portfolio section-description wow fadeIn">
-                        <h2>projects</h2>
-                        <div class="divider-1 wow fadeInUp"><span></span></div>
-                        <p>here's the place where I link some projects.</p>
+                        <h2 class="section-title">projects</h2>
+                        <div class="description wow fadeInUp">
+                            <p>click the headers and the included links for more information on each project.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -136,29 +139,35 @@
                         <!-- <div class="portfolio-box-image">
                             <img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
                         </div> -->
-                        <h3><a href="#">thing</a> <i class="fas fa-angle-right"></i></h3>
-                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> March 2018</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                        <h3><a class="txt-link" href="https://github.com/apriljames/CS450-Computer-Graphics" target="_blank">computer graphics exploration</a> <i class="fas fa-angle-right"></i></h3>
+                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> fall 2020</div>
+                        <p>this is a series of small projects exploring openGL. the projects explore the openGL pipeline
+                            though using display lists, texture mapping, lighting, vertex & frag shaders, and geometric modeling. 
+                            view the <a class="txt-link" href="https://github.com/apriljames/CS450-Computer-Graphics" target="_blank">github repo</a> 
+                            for detailed project discussion, or the <a class="txt-link" href="https://www.youtube.com/playlist?list=PLVvCO77cZAMZtyglkMwkMjkKSICgLdlKd" target="_blank">playlist</a> for live demo videos.   
                         </p>
                     </div>
                     <div class="col-md-4 portfolio-box wow fadeInDown">
                         <!-- <div class="portfolio-box-image">
                             <img src="assets/img/portfolio/2.jpg" alt="" data-at2x="assets/img/portfolio/2.jpg">
                         </div> -->
-                        <h3><a href="#">another thing</a> <i class="fas fa-angle-right"></i></h3>
-                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> February 2018</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        <h3><a class="txt-link" href="https://github.com/apriljames/CS340-Project" target="_blank">recipe tracking site</a> <i class="fas fa-angle-right"></i></h3>
+                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> Jan-Mar 2020</div>
+                        <p>this site provides a simple interface for a user to interact with a database tracking
+                            chefs, farms, recipes, and ingredients in an imaginary town setting. the site is written in 
+                            html/css/js and uses MariaDB as the relational database.
+                        </p>
                     </div>
                     <div class="col-md-4 portfolio-box wow fadeInUp">
                         <!-- <div class="portfolio-box-image">
                             <img src="assets/img/portfolio/3.jpg" alt="" data-at2x="assets/img/portfolio/3.jpg">
                         </div> -->
-                        <h3><a href="#">frog</a> <i class="fas fa-angle-right"></i></h3>
-                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> January 2018</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        <h3><a class="txt-link" href="https://aprilscanvas.com/" target="_blank">art portfolio</a> <i class="fas fa-angle-right"></i></h3>
+                        <div class="portfolio-box-date"><i class="far fa-calendar"></i> jan 2019 - ongoing</div>
+                        <p>this is where I keep the art that's important to me! the site is hosted through apache & aws, 
+                            and is written in html/css/bootstrap/php with a mySQL database for storing templatized posts. 
+                            view the project structure on <a class="txt-link" href="https://github.com/apriljames/Art_Portfolio" target="_blank">github</a>.
+                        </p>
                     </div>
                 </div>
                 <!-- <div class="row">
@@ -173,15 +182,37 @@
         <div class="experience-container section-container">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-4 section-description text">
-                        <h1 class="wow fadeInLeftBig">experience</h1>
+                    <div class="col-md section-description text">
+                        <h2 class="section-title">experience</h2>
                         <div class="description wow fadeInLeftBig">
                             <p>
-                                please view my resume here:
+                                please view my resume here as an external pdf:
                             </p>
                         </div>
                         <div class="top-big-link wow fadeInUp">
-                            <a class="btn btn-primary btn-link-1" href="https://azmind.com">view my resume</a>
+                            <a class="btn btn-primary btn-link-1" href="/assets/pdf/resume.pdf" target="_blank">view my resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-container section-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md section-description text">
+                        <h2 class="section-title">contact</h2>
+                        <div class="description wow fadeInLeftBig">
+                            <p>
+                                say hi!
+                            </p>
+                        </div>
+                        <div class="social-networks">
+                            <a href="https://www.linkedin.com/in/april-james/" target="_blank" class="icoLinkedin" title="LinkedIn"><i class="social-icon fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/apriljames" target="_blank" class="icoGithub" title="Github"><i class="social-icon fab fa-github-alt"></i></a>
+                            <a href="https://aprilscanvas.com/" target="_blank" class="icoWebsite" title="Art Portfolio"><i class="social-icon fas fa-paint-brush"></i></a>
+                            <a href="#" class="icoEmail" title="Email"><i class="social-icon far fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
