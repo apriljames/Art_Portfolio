@@ -72,6 +72,10 @@ body {
     color: #FFF;
 }
 
+.fa-user {
+    padding: 0px;
+}
+
 /* Titles */
 h2{
 	font-family: 'Comfortaa','Source+Code+Pro', serif;
@@ -144,7 +148,7 @@ article {
 }
 /* Links */
 a {
-    color: #0645AD;
+    color: #006d57;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -156,7 +160,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #53c0aa;
     text-decoration: none;
     outline: 0;
 }
@@ -207,9 +211,6 @@ a:after {
     font-size: 12px;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu {
-    
-}
 
 .navbar-inverse .navbar-nav .dropdown-item {
     color: #777;
@@ -229,7 +230,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-brand {
-	color: #222;
+	color: rgb(255, 255, 255);
 }
 
 .navbar-inverse .navbar-toggle {
@@ -241,14 +242,28 @@ a:after {
 }
 
 .navbar-inverse .navbar-toggle > .icon-bar {
-	background-color: #222;
+	background-color: rgb(255, 255, 255);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #222;
+    background-color: #FFF;
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 5px !important;
+    box-shadow: none;
 }
 
 .progress-bar-theme {
   background-color: #222222;
 }
 
-
+.fa-user {
+    font-size: 12px;
+    padding: 0px !important;
+    width: 30%;
+}
 
 
 /* Helpers */
@@ -406,3 +421,28 @@ bt {
     padding: 5px;
 }
 
+/*******log in/out page********/
+.login-container {
+    padding-right: 30vw;
+    padding-left: 30vw;
+    margin-bottom: 20vh;
+}
+
+.login-container .form-btn {
+    align-items: center !important;
+    padding-top: 40px;
+}
+
+.form-inputs {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    background-color: #deebe8;
+}
+
+.err-msg {
+    background-color: #ffefe2;
+    border-radius: 5px;
+}

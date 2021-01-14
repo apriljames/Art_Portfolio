@@ -25,6 +25,9 @@
                 </li>
                 <li><a class="<?=($activePage == 'Resume')?'active':''?>" href="<?=$level?>assets/pdf/resume.pdf" target="_blank">Resume</a></li>
                 <li><a class="<?=($activePage == 'About')?'active':''?>" href="<?=$level?>about/index.php">About</a></li>
+                <li><a class="<?=($activePage == 'Login')?'active':''?>" href="<?=$level?>login.php">
+                    <i class="<?php echo (isset($_SESSION['username'])) ? "fas fa-frog" : "fa fa-user"?> nav-user" aria-hidden="true"></i>  
+                </a></li>
                 
             </ul>
         </div>
