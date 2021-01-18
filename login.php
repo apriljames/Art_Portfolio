@@ -97,7 +97,7 @@
             <div class="login-container">
                 <h2 class="centered">hello, <?php echo($_SESSION['fname']) ?>!</h2>
                 <div class="form-btn form-group centered">
-                    <a class="btn" href="index.php" role="button">add post</a>
+                    <a class="btn" href="addPost.php" role="button">add post</a>
                 </div>
                 <div class="form-btn form-group centered">
                     <a class="btn" href="logout.php" role="button">log out</a>

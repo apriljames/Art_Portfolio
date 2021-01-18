@@ -146,6 +146,11 @@ article {
 .right {
 	text-align: right;
 }
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* Links */
 a {
     color: #006d57;

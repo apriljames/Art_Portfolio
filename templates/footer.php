@@ -16,7 +16,7 @@
                 <p>
                     <a href="https://www.instagram.com/_artsy_eggo/?hl=en" class="fa fa-instagram"></a>
                     <a href="https://www.linkedin.com/in/april-james/" class="fa fa-linkedin"></a>
-                    <a href="https://www.facebook.com/april.james.399488" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/april.james.e/" class="fa fa-facebook"></a>
                 </p>
             </div><!-- /col-lg-4 -->
             
